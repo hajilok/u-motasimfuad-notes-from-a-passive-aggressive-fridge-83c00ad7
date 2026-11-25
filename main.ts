@@ -4,9 +4,9 @@ import { dirname, join } from "node:path";
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 const OUTPUT_PATH = join(OUTPUT_DIR, "entry.txt");
 
-// Final Gen-3 championship note (113 UTF-8 bytes, single-line ASCII).
+// Round-2 rank-defense championship note (V2, 144 UTF-8 bytes, single-line ASCII).
 const FRIDGE_NOTE =
-  "Inventory update: the orange juice left for 5 seconds and returned 142g lighter; I've tagged it 'Not For Guests.'";
+  "Lovely work tucking four takeout boxes behind the San Pellegrino at 6:55. Don't worry, I hid my inventory list so your date only sees this note.";
 
 function writeNote(outputPath: string, note: string): void {
   const trimmed = note.trim();
