@@ -4,9 +4,9 @@ import { dirname, join } from "node:path";
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 const OUTPUT_PATH = join(OUTPUT_DIR, "entry.txt");
 
-// Round 2 undefeated tournament champion (G2-06, 116B) — pending Gen-3 surgical micro-polish.
+// Final Gen-3 championship note (113 UTF-8 bytes, single-line ASCII).
 const FRIDGE_NOTE =
-  "Inventory update: the orange juice left for 5 seconds and returned 140g lighter, so I've marked it 'Not For Guests.'";
+  "Inventory update: the orange juice left for 5 seconds and returned 142g lighter; I've tagged it 'Not For Guests.'";
 
 function writeNote(outputPath: string, note: string): void {
   const trimmed = note.trim();
